@@ -18,7 +18,7 @@ for line, command in enumerate(filename, 1):
           if command[:4].strip() not in variables.keys():
                print(command[4:].encode('raw_unicode_escape').decode('unicode_escape'))
           else:
-               print(variables[command[:4].strip())
+               print(variables[command[:4].strip()])
      else:
           if command.casefold() == 'say':
                print('There\'s nothing to say! If you want to make a new line use the "\\n" method.')
