@@ -1,25 +1,14 @@
-# EasyLang Docs
-___
 
+# Latest Update (0.0.3)
 
+1) Improved variable system (Rewrite)
+2) You can now actually use variables.
+```Lua
+- First, we make a new variable:
 
-### Comments
-> **- `comment`**
-> Anything you write after the dash, will be skipped. Can be useful to make your code more readable.
+var Variable_Name = Variable Value
 
+- Now, we print the variable. Like this:
 
-
-### Printing
-> **say `text`**
-> This will print `text`. 
-
-
-### Variables
-> **var `VariableName` = `Variable Value`**
-
-
-
-___
-And that was a basic explenation of how to use **EasyLang**!
-But remember, there are still a few things you need to know about EasyLang:
-1) EasyLang is not Space Sensitive or Case Sensitive.
+say Hey! \n Check my new variable! {Variable_Name}
+```
