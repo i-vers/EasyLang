@@ -1,5 +1,4 @@
 filename = open('code.el', 'r')
-line = 0
 
 for line, command in enumerate(filename, 1):
      command = command.strip()
@@ -17,7 +16,7 @@ for line, command in enumerate(filename, 1):
   
    
      else:
-          if command == 'say'.casefold():
+          if command.casefold() == 'say':
                print('There\'s nothing to say! If you want to make a new line use the "\\n" method.')
 
           else:
